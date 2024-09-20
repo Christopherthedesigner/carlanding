@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dacia</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    </head>
+
+
+    <body>
+
+    <header>
+        <div class="container">
+          <div class="top-header">
+              <div class="menu-burger">
+                    <div id="menuArea">
+                        <input type="checkbox" id="menuToggle"></input>
+              
+                        <label for="menuToggle" class="menuOpen">
+                          <div class="open"></div>
+                        </label>
+              
+              <div class="menu menuEffects">
+                  <label for="menuToggle"></label>
+
+
+
+
+                      <div class="menuContent">
+
+                        <div class="dual-one">
+                          <span id="arrowLeftMenu" class="arrowLeft"><img src="./icons/component.svg" class="component">Menu</span>
+
+                          <ul>
+                            <li><a href="#">1.ACCUEIL</a></li>
+                            <li><a href="#">2.A PROPOS</a></li>
+                            <li><a href="#">3.ACCESSOIRES</a></li>
+                            <li><a href="#">4.EQUIPMENTS</a></li>
+                            <li><a href="#">5.SERVICES</a></li>
+                            <li><a href="#">6.OFFRES</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="dual-two">
+                          <ul>
+                            <li><a href="#">7.ACCUEIL</a></li>
+                            <li><a href="#">8.A PROPOS</a></li>
+                            <li><a href="#">9.ACCESSOIRES</a></li>
+                            <li><a href="#">10.EQUIPMENTS</a></li>
+                            <li><a href="#">11.SERVICES</a></li>
+                            <li><a href="#">12.OFFRES</a></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                  </div>
+              </div>
+            </div>
+
+
+            <div class="header-icons">
+              <a href="#"><img src="./icons/Path 1.svg"></a>
+              <a href="#"><img src="./icons/Group 1.svg"></a>
+              <a href="#"><img src="./icons/Group 2.svg"></a>
+
+            </div>
+        </div>
+      </div>
+    </header>
+
+ <!-----title---->
+    <div class="title-header">
+      <div class="container">
+        <h1 class="header-title">DACIA SPRING <br> <span>TEINTES</span></h1>
+        <div class="line"></div>
+      </div>
+    </div>
+    <!-----hero---->
+    <div class="small-container">
+ 
+  <div class="car-display">
+      <img id="car" src="./img/dacia-kaki.jpg" alt="Car">
+  </div>
+
+  <h2 id="carTitle">Kaki Dacia</h2>
+
+  <div class="color-buttons">
+    <img class="pellets active" onclick="changeCarColor('kaki', this)" src="./img/kaki-pellet.png" alt="a">
+    <img class="pellets" onclick="changeCarColor('rouge', this)" src="./img/red-pellet.png" alt="b">
+    <img class="pellets" onclick="changeCarColor('bleu', this)" src="./img/blue-pellet.png" alt="c">
+    <img class="pellets" onclick="changeCarColor('blanc', this)" src="./img/white-pellet.png" alt="d">
+    <img class="pellets" onclick="changeCarColor('grey', this)" src="./img/grey-pellet.png" alt="e">
+    <img class="pellets" onclick="changeCarColor('black', this)" src="./img/ardoise-pellet.png" alt="f">
+</div>
+
+
+</div>
+
+<div class="navigation">
+  <button class="prev"><img src="./icons/arrow-left.svg"></button>
+  <button class="next"><img src="./icons/Path 791.svg"></button>
+</div>
+
+
+<!--section 1-->
+<div class="small-container">
+  <div class="content-wrapper">
+      <div class="content-paragraph">
+         <p>Nouvelle Dacia Spring 100 % électrique n’est pas seulement branchée. 
+          Elle séduit par son style urbain énergique. </p>
+          <p>En combinant garde au sol surélevée, arches de roues élargies, épaules robustes et 
+            protections de bas de porte, elle affiche une allure de SUV compact. 
+            La face avant se distingue par son capot bombé, 
+            ses optiques effilées et son large bouclier.</p> 
+
+          <p>L’arrière privilégie le dynamisme : 
+            lignes puissantes du pare-chocs, ailes nervurées, ski de protection. Les barres de toit 
+            et le système d’enjoliveurs Flexwheel similaire aux jantes en alliage dotent le profil 
+            d’un look valorisant.</p> 
+            
+            <p>Avec la finition EXTREME, optez pour une personnalité encore plus 
+          affirmée. Citadine électrique audacieuse, Spring rend votre quotidien aussi simple que stylé.
+        </p>
+      </div>
+      <div class="image-container">
+      <div class="content-image">
+           
+      </div> 
+      <div id="AjaxModal">
+        <div id="AjaxTextContent"></div>
+      </div>
+    <a href="#" class="button-with-icon" id="loadContact">
+      <img src="./icons/14-hors-biblioth-que-1407-info.svg" alt="Icon">
+      En savoir plus
+  </a>
+
+    </div>
+  </div>
+</div>
+ 
+
+     <!-----footer---->
+    <footer>
+      <div class="container">
+      
+      <div class="post-footer">
+        <img class="logo" src="./icons/dacia-logo-1.svg">
+
+    
+        
+        
+          <ul class="footer-link ">
+            <li><a href="#">Informations légales site</a></li>
+            <li><a href="#">Données personelles</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        
+          
+      <div class="mobile-line">
+       <div class="social">
+            <a href="#"><img src="./icons/Facebook.svg"></a>
+            <a href="#"><img src="./icons/insta.svg"></a>
+            <a href="#"><img src="./icons/Twitter.svg"></a>
+            <a href="#"><img src="./icons/youtube.svg"></a>
+        </div>
+      </div>
+     
+
+        
+
+      </div>
+      </div>
+    </footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1250 @@
+/* Universal selector for all elements */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+	/* Base font size */
+	line-height: 1.5;
+	/* Default line height */
+	font-family: Arial, sans-serif;
+	/* Default font family */
+	color: #333;
+	/* Default text color */
+	background-color: #f5f5f5;
+	/* Background color for the entire page */
+}
+
+/* Example of additional global styles for body */
+body {
+	margin: 0;
+
+	background-color: #fff;
+	/* Background color for the body */
+}
+
+/*container*/
+
+.container {
+	width: 100%;
+	max-width: 1640px;
+	margin: 0 auto;
+	padding: 10px 10px;
+	box-sizing: border-box;
+}
+
+.small-container {
+	width: 100%;
+	max-width: 1088px;
+	margin: 0 auto;
+	padding: 10px 10px;
+	box-sizing: border-box;
+}
+
+
+/*menu-burger*/
+.open {
+	background-color: #707070 !important;
+	width: 24px !important;
+	height: 3px !important;
+	display: block;
+	border-radius: 2px;
+	cursor: pointer;
+	position: relative;
+	top: 8px;
+}
+
+
+.open:before {
+	content: "";
+	background-color: #707070 !important;
+	width: 32px !important;
+	height: 3px !important;
+	display: block;
+	border-radius: 2px;
+	position: relative;
+	top: -8px;
+	transform: rotate(0deg);
+	transition: all 0.3s ease;
+}
+
+
+.open:after {
+	content: "";
+	background-color: #707070 !important;
+	width: 27px !important;
+	height: 3px !important;
+	display: block;
+	border-radius: 2px;
+	position: relative;
+	top: 6px !important;
+	transform: rotate(0deg);
+	transition: all 0.3s ease;
+}
+
+/*font-desktop*/
+
+@font-face {
+	font-family: 'DaciaBlock-Bold';
+	src: url('font/FONTS-Web/DaciaBlock-Bold.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DaciaBlockExtended-Bold';
+	src: url('font/FONTS-Web/DaciaBlockExtended-Bold.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DaciaBlockExtended-Regular';
+	src: url('font/FONTS-Web/DaciaBlockExtended-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'DaciaBlock-Light';
+	src: url('font/FONTS-Web/DaciaBlock-Light.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'DaciaBlock-Regular';
+	src: url('font/FONTS-Web/DaciaBlock-Light.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Read-Bold_V3000';
+	src: url('font/FONTS-Web/DaciaBlock-Light.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Read-Light_V3000';
+	src: url('font/FONTS-Web/Read-Light_V3000.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Read-LightItalic_V3000';
+	src: url('font/FONTS-Web/Read-LightItalic_V3000.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Read-Medium_V3000';
+	src: url('font/FONTS-Web/Read-Medium_V3000.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Read-Regular_V3000';
+	src: url('font/FONTS-Web/Read-Regular_V3000.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/*heading*/
+
+h1 {
+	font-family: 'DaciaBlock-Bold';
+}
+
+
+/*header*/
+.top-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-icons img {
+	height: 27px;
+	margin: 0 0.4rem;
+}
+
+.header-title {
+	font-family: 'DaciaBlockExtended-Regular';
+	font-size: 20px;
+	color: #707070;
+	line-height: 2rem;
+}
+
+.line {
+	border: 3px solid #707070;
+	width: 100%;
+	margin-top: 20px;
+}
+
+h1.header-title span {
+	color: #707070;
+	font-size: 40px;
+	font-family: 'DaciaBlockExtended-Regular';
+
+}
+
+/*burger menu*/
+
+input {
+	display: none;
+}
+
+.open {
+	background-color: #3c3c3c;
+	width: 24px;
+	height: 4px;
+	display: block;
+	border-radius: 2px;
+	cursor: pointer;
+	position: relative;
+	top: 8px;
+}
+
+.open:before {
+	content: "";
+	background-color: #3c3c3c;
+	width: 24px;
+	height: 4px;
+	display: block;
+	border-radius: 2px;
+	position: relative;
+	top: -8px;
+	transform: rotate(0deg);
+	transition: all 0.3s ease;
+}
+
+.open:after {
+	content: "";
+	background-color: #3c3c3c;
+	width: 24px;
+	height: 4px;
+	display: block;
+	border-radius: 2px;
+	position: relative;
+	top: 4px;
+	transform: rotate(0deg);
+	transition: all 0.3s ease;
+}
+
+.menuOpen {
+	width: 24px;
+	height: 20px;
+	display: block;
+	cursor: pointer;
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.menuOpen:hover .open:before {
+	top: -9px;
+}
+
+.menuOpen:hover .open:after {
+	top: 5px;
+}
+
+.menu {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/dacia-pop-up.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*z-index: 1;*/
+}
+
+.menu:before .menu label {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	background-size: 100%;
+	cursor: pointer;
+}
+
+.menu .menuContent {
+	font-size: 30px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+	height: 100%;
+}
+
+.menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.menu ul li a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	transition: color 0.2s;
+	text-transform: uppercase;
+	padding: 25px 0;
+	text-align: left;
+}
+
+
+.menuEffects {
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.5s, visibility 0.5s;
+}
+
+.menuEffects ul {
+	transform: translateY(0%);
+	transition: all 0.5s;
+}
+
+#menuToggle:checked~.menuEffects {
+	opacity: 1;
+	visibility: visible;
+	transition: opacity 0.5s;
+}
+
+#menuToggle:checked~.menuEffects ul {
+	opacity: 1;
+}
+
+#menuToggle:checked~.menuOpen .open {
+	background-color: transparent;
+}
+
+#menuToggle:checked~.menuOpen .open:before {
+	content: "";
+	background-color: white;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	display: none
+}
+
+#menuToggle:checked~.menuOpen .open:after {
+	content: "";
+	background-color: white;
+	transform: rotate(-45deg);
+	position: relative;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	display: none
+}
+
+#menuToggle:not(:checked)~.menuEffects ul {
+	transform: translateY(-30%);
+}
+
+.dual-one {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-family: 'DaciaBlockExtended-Bold';
+}
+
+.dual-two {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-family: 'DaciaBlockExtended-Bold';
+}
+
+
+/*footer*/
+footer {
+	background: #646B52;
+	display: flex;
+}
+
+img.logo {
+	height: 1rem;
+}
+
+
+.post-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+ul.footer-link {
+	display: flex;
+	justify-content: space-evenly;
+	list-style-type: none;
+	align-items: center;
+	font-family: 'Read-Light_V3000';
+
+}
+
+ul.footer-link a {
+	color: #fff !important;
+	margin: 0rem 4rem;
+	text-decoration: none !important;
+}
+
+.social img {
+	height: 1.3rem;
+	margin: 0 0.4rem;
+}
+
+.social {
+	display: inline-flex;
+	align-self: center;
+}
+
+/*car-section*/
+.color-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+img#car {
+	width: 100%;
+
+}
+
+img.pellets {
+	width: 75px;
+	height: 75px;
+	margin: 0.5rem;
+}
+
+img.pellets:hover {
+	border: 5px solid #9F0808;
+	border-radius: 100%;
+}
+
+.navigation {
+	position: absolute;
+	top: 60%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	transform: translateY(-50%);
+}
+
+span#arrowLeftMenu {
+	font-size: 60px;
+	text-transform: uppercase;
+	margin-right: 10rem;
+}
+
+.arrowLeft .component {
+	margin-right: 1rem;
+	position: relative;
+	top: 0;
+	left: -5rem;
+}
+
+.navigation button {
+	background: #6f6f6f;
+	border: none;
+	font-size: 2rem;
+	cursor: pointer;
+	padding: 1rem;
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	height: 7rem;
+	justify-content: center;
+	align-items: center;
+}
+
+button.prev:hover,
+button.next:hover {
+	background: #646b52;
+}
+
+.color-name {
+	font-size: 15px;
+	text-align: center;
+	font-family: 'DaciaBlockExtended-Bold';
+	color: #000000;
+	margin-bottom: 2rem;
+}
+
+
+/*section 1*/
+.content-wrapper {
+	display: flex;
+	padding: 65px 0px;
+}
+
+.content-paragraph {
+	padding-right: 1rem;
+}
+
+.content-paragraph p {
+	text-align: left;
+	font-family: 'Read-Regular_V3000';
+	font-size: 15px;
+	margin-top: 1rem;
+	padding: 2px;
+}
+
+.content-image {
+	background: url(./img/dacia-interior.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	min-height: 463px;
+	min-width: 536px;
+}
+
+/*modal*/
+
+.content-wrapper-modal {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.content-image-modal {
+	background: url(./img/dacia.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	min-height: 400px;
+	min-width: 450px;
+}
+
+img.close {
+	background: #646B52;
+	padding: 0.35rem;
+	border-radius: 50px;
+}
+
+.content-paragraph-modal {
+	padding-right: 1rem;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.content-paragraph-modal p {
+	text-align: left;
+	font-family: 'Read-Regular_V3000';
+	font-size: 13px;
+	margin-top: 1rem;
+	padding-left: 6rem;
+}
+
+.modal-title {
+	font-family: 'DaciaBlockExtended-Regular';
+	font-size: 1.5rem;
+	color: #000;
+	margin-bottom: 6rem;
+}
+
+.image-container {
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.button {
+	font-family: 'Read-Regular_V3000';
+	color: #000;
+}
+
+.button-with-icon {
+	display: inline-flex;
+	align-items: center;
+	background-color: #ffffff;
+	color: black;
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 16px;
+	border: 2px solid #000;
+	margin-top: 1.5rem;
+	font-weight: 600;
+	padding: 0rem;
+}
+
+.button-with-icon img {
+	margin-right: 3rem !important;
+}
+
+.button-with-icon img {
+	margin-right: 10px;
+	width: 36px;
+	height: 36px;
+	background: black;
+	padding: 6px;
+	display: flex;
+}
+
+a#loadContact {
+	padding: 0rem 2rem;
+}
+
+a#loadContact {
+	padding: 0rem 3rem 0rem 0rem;
+}
+
+.button-with-icon img {
+	margin-right: 10px;
+	width: 30px;
+	height: 30px;
+	background: black;
+	padding: 2px;
+	display: flex;
+}
+
+.menuContent {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.arrowLeft {
+	color: #fff;
+}
+
+.dual-one,
+.dual-two {
+	width: 45%;
+}
+
+.dual-one ul,
+.dual-two ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.dual-one li,
+.dual-two li {
+	margin: 10px 0;
+}
+
+.dual-two {
+	margin-top: 6rem;
+}
+
+.hidden {
+	display: none;
+}
+
+.menuContent.hidden {
+	display: none !important;
+}
+
+h2#carTitle {
+	text-align: center;
+	font-family: 'DaciaBlockExtended-Bold';
+	font-size: 15px;
+	margin-bottom: 2rem;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.ajaxModel {
+	margin: 20px;
+}
+
+.button-with-icon {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	background-color: #ffffff;
+	border: 2px solid #000;
+	border-radius: 0;
+}
+
+.button-with-icon img {
+	margin-right: 10px;
+}
+
+
+#AjaxModal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: #fff;
+	justify-content: center;
+	align-items: center;
+}
+
+
+#AjaxTextContent {
+	background-color: #fff;
+	height: 100vh;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+div#CloseTrigger {
+	position: relative;
+	left: 64rem;
+	background-image: url(./icons/Group-1116.png);
+	background-color: #646B52;
+	background-repeat: no-repeat;
+	width: 3rem !important;
+	height: 3rem !important;
+	border-radius: 50%;
+	background-position: center center;
+}
+
+#menuToggle:checked~.menuEffects {
+	opacity: 1;
+	visibility: visible;
+	transition: opacity 0.5s;
+	z-index: 99;
+}
+
+div#AjaxTextContainer {
+	position: relative;
+}
+
+div#CloseTrigger {
+	position: absolute;
+	width: 3rem;
+	height: 2rem;
+	left: 62rem;
+	top: -31px;
+}
+
+
+/*mediaqueries*/
+
+/* Mobile devices (portrait, max-width 600px) */
+@media (max-width: 575px) {
+
+
+	div#AjaxTextContainer {
+		position: relative;
+		margin-top: 15rem;
+	}
+
+	div#CloseTrigger {
+		position: absolute;
+		width: 3rem;
+		height: 2rem;
+		left: 18rem;
+		top: -2rem !important;
+	}
+
+	ul.footer-link a {
+		margin: 0;
+	}
+
+	.social {
+		margin-bottom: 2rem;
+		margin-top: 2rem;
+	}
+
+	.arrowLeft .component {
+		margin-right: 1rem;
+		position: relative;
+		top: -5px;
+		left: 0rem;
+	}
+
+	.dual-one,
+	.dual-two {
+		width: 100%;
+	}
+
+	.content-paragraph-modal p {
+		padding: 0 !important;
+	}
+
+	.content-wrapper-modal {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#AjaxModal {
+		overflow: auto;
+		height: 100vh;
+	}
+
+	span#arrowLeftMenu {
+		margin: 0;
+	}
+
+	.dual-one li,
+	.dual-two li {
+		margin: 13px 0;
+	}
+
+	span#arrowLeftMenu {
+		font-size: 24px;
+		display: inline-flex;
+	}
+
+	.dual-two {
+		margin-top: 0;
+	}
+
+	.menu ul li a {
+		padding: 0;
+	}
+
+	img.logo {
+		height: 1rem;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.mobile-line {
+		text-align: center;
+		border-bottom: 2px solid #fff;
+		width: 100%;
+		padding: 0 !important;
+	}
+
+	span#arrowLeftMenu {
+		font-size: 24px;
+	}
+
+	.menu .menuContent {
+		flex-direction: column;
+	}
+
+	.menu ul li a {
+		display: block;
+		color: white;
+		text-decoration: none;
+		transition: color 0.2s;
+		text-transform: uppercase;
+		text-align: left;
+		font-size: 1rem;
+	}
+
+	.arrowLeft .component {
+		margin-right: 1rem;
+		position: relative;
+		top: 0;
+		left: 0rem;
+	}
+
+	ul.footer-link {
+		width: 100%;
+	}
+
+	ul.footer-link li {
+		border-bottom: 2px solid #fff;
+		width: 100%;
+		text-align: center;
+		padding: 1rem;
+	}
+
+	ul.footer-link {
+		margin-bottom: 1rem;
+		margin-top: 1rem;
+	}
+
+	ul.footer-link {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		list-style-type: none;
+		align-items: center;
+		font-family: 'Read-Light_V3000';
+	}
+
+	.post-footer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column-reverse;
+		flex-wrap: wrap;
+	}
+
+	.content-image {
+		min-height: 18rem;
+		min-width: 100%;
+		margin-top: 3rem;
+	}
+
+	.content-wrapper {
+		display: flex;
+		padding: 15px 0px !important;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+	.small-container {
+		width: 100%;
+		max-width: 354px;
+		margin: 0 auto;
+		padding: 20px 20px;
+		box-sizing: border-box;
+	}
+
+	.content-paragraph {
+		padding: 0;
+	}
+
+	.header-title {
+		font-size: 15px;
+	}
+
+	h1.header-title span {
+		font-size: 30px;
+	}
+
+	.navigation {
+		display: none;
+	}
+
+	.header-icons img {
+		height: 20px;
+		margin: 0 0.4rem;
+	}
+
+	div#CloseTrigger {
+		left: 0;
+		width: 2rem !important;
+		height: 2rem !important;
+	}
+
+	.color-buttons {
+		flex-wrap: wrap;
+		gap: 16px;
+	}
+
+	div#CloseTrigger {
+		position: absolute;
+		width: 3rem;
+		height: 2rem;
+		left: 18rem;
+		top: 1rem;
+	}
+
+	.content-image-modal {
+		min-width: 100%;
+		min-height: 10rem;
+		padding: 2rem;
+	}
+
+	.modal-title {
+		font-family: 'DaciaBlockExtended-Regular';
+		font-size: 1.2rem;
+		color: #000;
+		margin-bottom: 0;
+	}
+
+	.content-wrapper {
+		display: flex;
+		padding: 65px 0px;
+		flex-wrap: wrap;
+	}
+}
+
+/* Tablets (portrait, min-width 600px and max-width 900px) */
+@media (min-width: 576px) and (max-width: 991px) {
+
+
+	div#AjaxTextContainer {
+		position: relative;
+		margin-top: 15rem;
+	}
+
+	div#CloseTrigger {
+		position: absolute;
+		width: 3rem;
+		height: 2rem;
+		left: 34rem !important;
+		top: 0rem !important;
+	}
+
+	.social {
+		margin-bottom: 1rem;
+		margin-top: 1rem;
+	}
+
+	.arrowLeft .component {
+		margin-right: 1rem;
+		position: relative;
+		top: -5px;
+		left: 0rem;
+	}
+
+	.dual-one,
+	.dual-two {
+		width: 100%;
+	}
+
+	.content-paragraph-modal p {
+		padding: 0 !important;
+	}
+
+	.content-wrapper-modal {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#AjaxModal {
+		overflow: auto;
+		height: 100vh;
+	}
+
+	span#arrowLeftMenu {
+		margin: 0;
+	}
+
+	.dual-one li,
+	.dual-two li {
+		margin: 13px 0;
+	}
+
+	span#arrowLeftMenu {
+		font-size: 24px;
+		display: inline-flex;
+	}
+
+	.dual-two {
+		margin-top: 0;
+	}
+
+	.menu ul li a {
+		padding: 0;
+	}
+
+	img.logo {
+		height: 1rem;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.mobile-line {
+		text-align: center;
+		border-bottom: 2px solid #fff;
+		width: 100%;
+		padding: 0 !important;
+	}
+
+	span#arrowLeftMenu {
+		font-size: 24px;
+	}
+
+	.menu .menuContent {
+		flex-direction: column;
+	}
+
+	.menu ul li a {
+		display: block;
+		color: white;
+		text-decoration: none;
+		transition: color 0.2s;
+		text-transform: uppercase;
+		text-align: left;
+		font-size: 1rem;
+	}
+
+	.arrowLeft .component {
+		margin-right: 1rem;
+		position: relative;
+		top: 0;
+		left: 0rem;
+	}
+
+	ul.footer-link {
+		width: 100%;
+	}
+
+	ul.footer-link li {
+		border-bottom: 2px solid #fff;
+		width: 100%;
+		text-align: center;
+		padding: 1rem;
+	}
+
+	ul.footer-link {
+		margin-bottom: 1rem;
+		margin-top: 1rem;
+	}
+
+	ul.footer-link {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		list-style-type: none;
+		align-items: center;
+		font-family: 'Read-Light_V3000';
+	}
+
+	.post-footer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column-reverse;
+		flex-wrap: wrap;
+	}
+
+	.content-image {
+		min-height: 18rem;
+		min-width: 100%;
+		margin-top: 3rem;
+	}
+
+	.content-wrapper {
+		display: flex;
+		padding: 15px 0px !important;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+	.small-container {
+		width: 100%;
+		max-width: 608px;
+		margin: 0 auto;
+		padding: 20px 20px;
+		box-sizing: border-box;
+	}
+
+	.content-paragraph {
+		padding: 0;
+	}
+
+
+	.button-with-icon img {
+		margin-right: 10px;
+		width: 30px;
+		height: 30px;
+		background: black;
+		padding: 6px !important;
+		display: flex;
+	}
+
+	h1.header-title span {
+		font-size: 30px;
+	}
+
+	.navigation {
+		display: none;
+	}
+
+	.header-icons img {
+		height: 20px;
+		margin: 0 0.4rem;
+	}
+
+	div#CloseTrigger {
+		left: 0;
+		width: 2rem !important;
+		height: 2rem !important;
+	}
+
+
+	.color-buttons {
+		flex-wrap: wrap;
+		gap: 0;
+	}
+
+	div#CloseTrigger {
+		position: absolute;
+		width: 3rem;
+		height: 2rem;
+		left: 18rem;
+		top: 1rem;
+	}
+
+	.content-image-modal {
+		min-width: 100%;
+		min-height: 10rem;
+		padding: 2rem;
+	}
+
+	.modal-title {
+		font-family: 'DaciaBlockExtended-Regular';
+		font-size: 1.2rem;
+		color: #000;
+		margin-bottom: 0;
+	}
+
+	.content-wrapper {
+		display: flex;
+		padding: 65px 0px;
+		flex-direction: column;
+	}
+
+
+	.line {
+		display: none;
+	}
+
+	div#CloseTrigger {
+		position: absolute;
+		width: 3rem;
+		height: 2rem;
+		left: 37rem;
+		top: 4rem;
+	}
+
+	.header-title {
+		font-size: 15px;
+		display: none;
+	}
+
+}
+
+
+/* Small desktops (landscape, min-width 900px and max-width 1200px) */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+	span#arrowLeftMenu {
+		font-size: 37px;
+		text-transform: uppercase;
+		margin-right: 10rem;
+	}
+
+
+	.menu ul li a {
+		font-size: 26px;
+	}
+
+
+	ul.footer-link {
+		flex: none;
+	}
+
+	div#CloseTrigger {
+		left: 58rem;
+		top: -31px;
+	}
+
+	ul.footer-link a {
+		color: #fff !important;
+		margin-left: 0;
+		text-decoration: none !important;
+	}
